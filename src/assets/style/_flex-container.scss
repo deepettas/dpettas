@@ -1,0 +1,17 @@
+.flex-container{
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* for centering 3 blocks in the center */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @media screen and (max-width: 650px) {
+        flex-direction: column;
+        justify-content: right; 
+      }
+    
+    
+}
+

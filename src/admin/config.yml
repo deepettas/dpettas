@@ -1,0 +1,37 @@
+backend:
+  name: github
+  branch: blog
+  repo: deepettas/deepettas.github.io
+
+media_folder: "src/assets/images"
+public_folder: "static/assets/images"
+
+collections:
+
+  - name: "post"
+    label: "Post"
+    folder: "content/entries"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "index", name: "index", widget: "number" }
+      - { label: "display_index", name: "display_index", widget: "string" }
+      - { label: "published", name: "published", widget: "boolean", default: true}
+      - { label: "date", name: "date", widget: "datetime" }
+      - { label: "Post title", name: "title", widget: "string" }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Post content', name: 'body', widget: 'markdown' }
+
+  - name: "about"
+    label: "About"
+    folder: "content/about"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "index", name: "index", widget: "number" }
+      - { label: "published", name: "published", widget: "boolean", default: true}
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "datetime" }
+      - { label: "section", name: "section", widget: "string" }
+      - { label: "description", name: "description", widget: "text" }
+
