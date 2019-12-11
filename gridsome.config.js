@@ -9,7 +9,7 @@ module.exports = {
   siteDescription: 'Personal page of Dionisis Pettas',
 
   templates: {
-    Post: '/:title',
+    Project: '/:title',
     Tag: '/tag/:id'
   },
 
@@ -18,8 +18,8 @@ module.exports = {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Post',
-        path: 'content/entries/*.md',
+        typeName: 'Project',
+        path: 'content/projects/*.md',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {

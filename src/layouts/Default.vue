@@ -2,15 +2,9 @@
   <div id="app">
 
     <header class="header">
-      <div class="header__left">
-        <Logo v-if="showLogo" /> 
-      </div>
+      
       <div class="header__right">
-
-        <g-link v-if="showEntries" class="link"  to='/entries/'> entries </g-link>
-        <g-link v-if="showAbout" class="link" to='/about/'> about </g-link>
-
-        <ToggleTheme  style="margin-bottom: 5px"/>
+        <!-- <ToggleTheme  style="margin-bottom: 5px"/> -->
       </div>
     </header>
 
