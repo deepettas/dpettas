@@ -1,15 +1,23 @@
-// Import main css
-import '~/assets/style/index.scss'
-
-// Import default layout so we don't need to import it to every page
-import DefaultLayout from '~/layouts/Default.vue'
-import ResumeLayout from '~/layouts/ResumeLayout.vue'
+// This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-export default function (Vue, { router, head, isClient }) {
-  
-  // Set default layout as a global component
-  Vue.component('Layout', DefaultLayout);
-  Vue.component('ResumeLayout', ResumeLayout);
-  head.script.push({src: '/hotjar.js'});
-}
 
+import Vuetify from 'vuetify'
+import './assets/style/index.scss'
+
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { router, appOptions, head, isClient }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+  })
+
+  const opts = { icons: {
+    iconfont: 'mdi',
+  } }// opts includes, vuetify themes, icons, etc.
+  Vue.use(Vuetify)
+  appOptions.vuetify = new Vuetify(opts)
+
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+}
