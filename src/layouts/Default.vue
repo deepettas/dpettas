@@ -1,19 +1,33 @@
-
 <template>
-  <v-app>
-        <Toolbar />
+  <v-app >
+    <div >
+      <v-app-bar>
+        <v-btn
+          icon
+          :to="$url('/')"
+          title="Home"
+        >
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+        <v-toolbar-title>{{ $static.metadata.siteName }}</v-toolbar-title>
+        <v-spacer />
 
-    <v-fade-transition mode="out-in">
-      <main v-bind="attrs">
-        <Jumbotron/>
-        
-        <router-view />
-      </main>
-    </v-fade-transition>
-
-    <Footer />
+        <v-btn :to="$url('/')" color="primary">
+          Home
+        </v-btn>
+        <v-btn :to="$url('/about')">
+          About
+        </v-btn>
+      </v-app-bar>
+    </div>
+    <v-container>
+      <v-card>
+        <slot />
+      </v-card>
+    </v-container>
   </v-app>
 </template>
+
 <static-query>
   query {
     metadata {
@@ -21,43 +35,3 @@
     }
   }
 </static-query>
-
-
-<script>
-import Toolbar from '~/components/Toolbar.vue'
-import Footer from '~/components/Footer.vue'
-import Jumbotron from '~/components/Jumbotron.vue'
-export default {
-  components: {
-    Toolbar,
-    Footer,
-    Jumbotron
-  },
-    computed: {
-      attrs () {
-        return {
-          key: this.$route.path,
-          style: {
-            minHeight: 'calc(100vh - ' + this.$vuetify.application.top + 'px'
-          }
-        }
-      }
-    }
-}
-</script>
-
-
-<style lang="sass">
-  section
-    padding-top: 64px
-    padding-bottom: 64px
-
-    @media screen and (max-width: 640px)
-      padding-top: 16px
-      padding-bottom: 16px
-
-  // Remove once fixed
-  // https://github.com/vuetifyjs/vuetify/issues/8327
-  .theme--dark.v-list-item
-    color: #FFFFFF
-</style>
