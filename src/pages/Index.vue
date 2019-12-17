@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    
-
-    
+    <section>
+      <Services />
+      </section>
   </Layout>
 </template>
 
@@ -11,6 +11,7 @@
 
 
   export default {
+    
     metaInfo () {
       return {
         title: 'Hello, world !',
@@ -20,5 +21,8 @@
         
       }
     },
+    components: {
+      Services: () => import('@/components/Services.vue')
+    }
   }
 </script>

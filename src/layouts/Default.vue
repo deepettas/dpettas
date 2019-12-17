@@ -5,13 +5,13 @@
 
     <v-fade-transition mode="out-in">
       <main v-bind="attrs">
-        <core-jumbotron />
+        <Jumbotron/>
         
         <router-view />
       </main>
     </v-fade-transition>
 
-        <Footer />
+    <Footer />
   </v-app>
 </template>
 <static-query>

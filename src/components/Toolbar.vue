@@ -5,11 +5,7 @@
     elevate-on-scroll
     :color="!isScrolling ? 'transparent' : 'grey lighten-3'"
   >
-    <v-img
-      class="shrink"
-      max-width="60%"
-      src="/static/alpha-creative-logo.png"
-    />
+    
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn
