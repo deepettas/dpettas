@@ -1,19 +1,17 @@
 <template>
 
 	<div class="side-menu">
-			<g-link class="link" to='https://subneural.space/'> subneural space </g-link>
-        	<g-link class="link" to='/about/'> about this space </g-link>
-        	<g-link class="link" to='/entries/'> all neural outputs </g-link>
+			<router-link class="link" to='/'> subneural space </router-link>
+        	<router-link class="link" to='/entries/'> all neural outputs </router-link>
 			<p class="spacer">   </p>
-			<g-link class="link" to='/self/'> Dionisis Pettas </g-link>
-			
-
+			<router-link class="link" to='https://dpettas.com/'> Dionisis Pettas </router-link>
 	</div>
 </template>
 
 
 <style lang="scss">
 .side-menu{
+	user-select: none;
 	display: flex;
 	flex-direction: column;
     margin-left: auto;
@@ -31,6 +29,11 @@
     }
 
 }
+
+.router-link-exact-active {
+	opacity: .5;
+}
+
 .link {
 	
 	text-decoration: none;
@@ -48,7 +51,9 @@
 	@media screen and (max-width: 650px) {
 		margin-bottom: 10px;
     }
+	
 }
+
 .spacer {
 	margin-bottom: 77px;
 	@media screen and (max-width: 650px) {

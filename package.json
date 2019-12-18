@@ -16,8 +16,11 @@
     "gh-pages": "^2.1.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gsap": "^3.0.1",
+    "jquery": "^3.4.1",
     "jshint": "^2.10.3",
-    "netlify-cms": "^2.9.7"
+    "netlify-cms": "^2.9.7",
+    "vuetify": "^2.1.13"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",

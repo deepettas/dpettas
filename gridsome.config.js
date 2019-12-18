@@ -6,10 +6,10 @@
 
 module.exports = {
   siteName: 'Dionisis Pettas',
-  siteDescription: 'Personal page of Dionisis Pettas',
+  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
 
   templates: {
-    Project: '/:title',
+    Post: '/:title',
     Tag: '/tag/:id'
   },
 
@@ -18,8 +18,8 @@ module.exports = {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Project',
-        path: 'content/projects/*.md',
+        typeName: 'Post',
+        path: 'TheVault/entries/*.md',
         refs: {
           // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
           tags: {
@@ -28,7 +28,7 @@ module.exports = {
           }
         }
       }
-    },
+    },  
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
