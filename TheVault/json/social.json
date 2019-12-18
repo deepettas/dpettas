@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Email",
+        "icon": "mail_outline",
+        "href": "mailto:zarkopafilis@gmail.com"
+    },
+    {
+        "title": "Twitter",
+        "icon": "fab fa-twitter",
+        "href": "https://twitter.com/zarkopafilis"
+    },
+    {
+        "title": "Linked In",
+        "icon": "fab fa-linkedin",
+        "href": "https://www.linkedin.com/in/theodoros-ntakouris"
+    },
+    {
+        "icon": "fab fa-medium",
+        "href": "https://medium.com/@zarkopafilis"
+    },
+    {
+        "title": "Github",
+        "icon": "fab fa-github",
+        "href": "https://github.com/zarkopafilis"
+    },
+    {
+        "title": "Instagram",
+        "icon": "fab fa-instagram",
+        "href": "https://instagram.com/zarkopafilis"
+    }
+]

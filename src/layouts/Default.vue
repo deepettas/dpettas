@@ -1,91 +1,122 @@
 <template>
-  <div id="app">
+    <v-app >
+      <v-navigation-drawer v-model="drawer" app clipped>
+        <v-list dense>
+          <v-list-item v-for="item in menuItems" :key="item.title" :href="item.href" :target="item.target ? item.target : ''">
+            <v-list-item-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>
+                {{ item.title }}  
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
 
-    <header class="header">
-      <div class="header__left">
-        <Logo v-if="showLogo" /> 
-      </div>
-      <div class="header__right">
+        <br />
+        <v-divider :inset="inset"></v-divider>
+        <v-subheader>Social</v-subheader>
 
-        <!-- <ToggleTheme  style="z-index:999; margin-bottom: 5px"/> -->
-      </div>
-    </header>
+        <v-list dense>
+          <div v-for="item in socialEntries" :key="item.title">
+          <v-list-item v-if="item.title" :href="item.href" target="_blank">
+            <v-list-item-action>
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>
+                {{ item.title }}  
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          </div>
+        </v-list>
+      </v-navigation-drawer>
 
-    <main class="main">
-      <slot/>
-    </main>
+      <v-app-bar app clipped-left>
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer">
+          <v-icon>menu</v-icon>
+        </v-app-bar-nav-icon>
+        <v-toolbar-title>@deepettas</v-toolbar-title>
 
-    <footer class="footer">
-      
-    </footer>
+        <v-spacer />
 
-  </div>
+        <!-- <v-switch v-model="darkMode" label="Dark Mode" style="margin-top: 26px;"></v-switch> -->
+        <div class="toolbar-icons">
+        <v-btn icon class="mx-1" v-for="entry in socialEntries" :key="entry.href" :href="entry.href" 
+          target="_blank">
+          <v-icon> {{ entry.icon }} </v-icon>
+        </v-btn>
+        </div>
+      </v-app-bar>
+
+      <v-content>
+        <v-container fluid fill-height>
+          <v-layout fill-width>
+            <div class="col-10 mx-auto ">
+              <slot />
+            </div>
+          </v-layout>
+        </v-container>
+      </v-content>
+
+      <v-footer app inset>
+        <span class="footer">Copyright &copy; Dionisis Pettas 2019</span>
+      </v-footer>
+    </v-app>
 </template>
 
 <script>
-import Logo from '~/components/art/Logo.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
+import menuItems from "~/../TheVault/json/menu.json"
+import socialEntries from "~/../TheVault/json/social.json"
 export default {
-  props: {
-    showLogo: { default: true },
-    showAbout: {default: true},
-    showEntries: {default: true}
+  name: "Default",
+  metaInfo: {
+    meta: [
+      { property: "og:title", content: "Zarkopafilis' Personal Website" },
+      { property: "og:type", content: "website" }
+    ]
   },
-  components: {
-    Logo,
-    ToggleTheme
+  created () {
+    this.$vuetify.theme.dark = true
+  },
+  data() {
+    return {
+      menuItems,
+      socialEntries,
+      darkMode: true,
+      drawer: null
+    };
+  },
+  watch: {
+    darkMode(newVal) {
+      this.$vuetify.theme.dark = newVal
+    }
   }
-}
+};
 </script>
 
-<style lang="scss">
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--body-color)!important;
-
-  min-height: var(--header-height);
-  padding: 0 calc(var(--space) / 2);
-  top:0;
-  z-index: 10;
-
-  font-size: .8em;
-  // font-family: HelveticaNowText-Medium;
-  &__left,
-  &__right {
-    display: flex;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 1300px) {
-    //Make header sticky for large screens
-    position: sticky;
-    width: 100%;
-  }
-  
+<style>
+html {
+  scroll-behavior: smooth;
 }
-
-
-.main {
-  margin: 0 auto;
-  padding: 1.5vw 15px 0;
+body {
+  font-family: 'Noto Sans', sans-serif;
 }
-
+.fill-width {
+  width: 100%;
+}
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: calc(var(--space) / 2);
-  text-align: center;
-  font-size: .8em;
-
-  > span {
-    margin: 0 .35em;
+  font-size: 14px;
+}
+@media screen and (max-width: 670px) {
+  .toolbar-icons {
+    display: none;
   }
-
-  a {
-    color: currentColor;
+  .col-10 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
   }
 }
 </style>
