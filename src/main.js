@@ -2,7 +2,6 @@
 import '~/assets/style/index.scss'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'
 
@@ -23,8 +22,22 @@ export default function (Vue, { router, appOptions, head, isClient }) {
     content: 'dennis, dionisis,pettas,cv,ceid'
   })
   const opts = { icons: {
+    
+    theme: {
+      themes: {
+        light: {
+          primary: '#00000',
+          secondary: '#b0bec5',
+          anchor: '#8c9eff',
+        },
+      },
+    },
     iconfont: 'mdi',
-  }, }// opts includes, vuetify themes, icons, etc.
+    
+    
+  }, 
+  }// opts includes, vuetify themes, icons, etc.
+  
   Vue.use(Vuetify);
   appOptions.vuetify = new Vuetify(opts)
 

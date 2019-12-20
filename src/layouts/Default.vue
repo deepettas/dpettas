@@ -1,6 +1,12 @@
 <template>
     <v-app >
-      <v-navigation-drawer v-model="drawer" app clipped>
+      <v-navigation-drawer
+       v-model="drawer"
+        width="10rem"
+        app 
+        clipped
+        
+      >
         <v-list dense>
           <v-list-item v-for="item in menuItems" :key="item.title" :href="item.href" :target="item.target ? item.target : ''">
             <v-list-item-action>
@@ -79,7 +85,7 @@ export default {
     ]
   },
   created () {
-    this.$vuetify.theme.dark = true
+    this.$vuetify.theme.dark = false
   },
   data() {
     return {
@@ -119,4 +125,6 @@ body {
     max-width: 100% !important;
   }
 }
+
+
 </style>

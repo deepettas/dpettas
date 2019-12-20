@@ -43,7 +43,6 @@ module.exports = {
     },
     
   ],
-  
 
   transformers: {
     //Add markdown support to all file-system sources
