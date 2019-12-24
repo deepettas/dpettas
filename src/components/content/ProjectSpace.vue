@@ -1,5 +1,11 @@
 <template>
-  <v-container grid-list-md text-xs-center>
+<div>
+                    <EntryCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+
+</div>
+
+  <!-- <v-container grid-list-md text-xs-center>
+
     <v-row class="px-0">
       <v-col cols="12">
         <v-responsive min-height="700">
@@ -56,8 +62,8 @@
           </v-container>
         </v-responsive>
 
-        <v-fade-transition mode="out-in">
-          <!-- <v-overlay
+        <!-- <v-fade-transition mode="out-in">
+          <v-overlay
             v-if="overlay"
             fixed
             opacity=".9"
@@ -82,11 +88,11 @@
               width="800"
               max-width="90vw"
             />
-          </v-overlay>-->
-        </v-fade-transition>
+          </v-overlay>
+        </v-fade-transition> -->
       </v-col>
     </v-row>
-
+<!-- 
     <v-layout row wrap>
       <v-card tile class="mx-auto mt-4" outlined v-for="project in projects" :key="project.title" >
         <v-list-item three-line>
@@ -110,8 +116,8 @@
           >{{ name }}</v-btn>
         </v-card-actions>
       </v-card>
-    </v-layout>
-  </v-container>
+    </v-layout> -->
+  </v-container> -->
 </template>
 
 <script>
@@ -200,6 +206,31 @@ export default {
   }
 };
 </script>
+
+<page-query>
+query {
+  posts: allPost(filter: { published: { eq: true }} ,order: DESC, sortBy: "index") {
+    edges {
+      node {
+        id
+        title
+        display_index
+        date (format: "D. MMMM YYYY")
+        timeToRead
+        description
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+</page-query>
+
+
 
 <style>
 .gallery-card {
