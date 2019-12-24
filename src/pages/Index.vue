@@ -43,7 +43,7 @@ export default {
   },
   metaInfo: {
     title: "Dionisis Pettas"
-  },
+  }
 };
 </script>
 
