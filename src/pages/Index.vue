@@ -41,12 +41,35 @@ export default {
   components: {
     ProjectSpace
   },
+  
   metaInfo: {
     title: "Dionisis Pettas"
   }
+  
 };
 </script>
-
+<page-query>
+query {
+  posts: allPost(filter: { published: { eq: true }} ,order: DESC, sortBy: "index") {
+    edges {
+      node {
+        id
+        title
+        display_index
+        date (format: "D. MMMM YYYY")
+        timeToRead
+        description
+        path
+        tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+</page-query>
 <style lang="scss">
 .full_view_width {
   width: 100vw;

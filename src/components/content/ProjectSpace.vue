@@ -7,14 +7,44 @@
           <v-container>
             <transition-group tag="v-row" name="fade-transition">
                <v-col
-                v-for="project in projects"
-                :key="project.img"
+                v-for="post in $page.posts.edges" 
+                :key="post.node.id"    
+            
                 cols="12"
                 class="gallery-card"
                 md="4"
 
               >
-                <ProjectCard :project="project" />
+                <v-card
+                    class="project_card"
+                    tile
+                    height="300"
+                    hover
+                    @click="overlay = post.node.img"
+                    :to="post.node.path"
+                  >
+                    
+
+                    <v-img
+                      class="card_image white--text align-end"
+                      height="130"
+                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                    >
+                      <v-card-title class="card-title" v-html="post.node.title"></v-card-title>
+                              <!-- <h3  class="card-title" v-html="post.node.title" /> -->
+                    </v-img>
+                    <div class="row flex">
+                    
+
+                      <!-- <v-card-subtitle class="pb-0">Number 10</v-card-subtitle> -->
+
+                      <v-card-text class="text--primary" v-html="post.node.description">  </v-card-text>
+
+                      <v-card-actions class="tag-buttons">
+                        <PostTags   :post="post.node"/>
+                      </v-card-actions>
+                    </div>
+                  </v-card>
                 </v-col>
             </transition-group>
           </v-container>
@@ -36,10 +66,10 @@ export default {
     PostTags,
     ProjectCard
   },
+  
   data() {
     return {
       category: null,
-      
       categories: [
         {
           text: "All Services",
@@ -115,28 +145,7 @@ export default {
 };
 </script>
 
-<page-query>
-query {
-  posts: allPost(filter: { published: { eq: true }} ,order: DESC, sortBy: "index") {
-    edges {
-      node {
-        id
-        title
-        display_index
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        description
-        path
-        tags {
-          id
-          title
-          path
-        }
-      }
-    }
-  }
-}
-</page-query>
+
 
 
 

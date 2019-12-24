@@ -7,10 +7,9 @@ media_folder: "src/assets/images"
 public_folder: "static/assets/images"
 
 collections:
-
-  - name: "post"
-    label: "Post"
-    folder: "TheVault/entries"
+  - name: "project"
+    label: "Project"
+    folder: "TheVault/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -19,5 +18,11 @@ collections:
       - { label: "published", name: "published", widget: "boolean", default: true}
       - { label: "date", name: "date", widget: "datetime" }
       - { label: "Post title", name: "title", widget: "string" }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: "Description", name: "description", widget: "string"}
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        options: ["Research", "Industry", "Art", "Personal"]
+        multiple: true
       - { label: 'Post content', name: 'body', widget: 'markdown' }
+      
