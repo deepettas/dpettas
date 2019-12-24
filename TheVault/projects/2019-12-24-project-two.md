@@ -7,5 +7,6 @@ title: Project two
 description: 'A project about two, the second part of the journey'
 tags:
   - Art
+cover_image: /static/assets/images/project_a.jpg
 ---
 asdsad sa das as das das
