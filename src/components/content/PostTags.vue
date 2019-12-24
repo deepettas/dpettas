@@ -1,7 +1,7 @@
 <template>
    <div class="post-tags">
-   		<g-link class="post-tags__link" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
-   			<span>#</span> {{ tag.title }}
+   		<g-link class="post-tags__link" v-for="tag in post.categories" :key="tag.id" :to="'https://www.subneural.space/tag/Existential'">
+   			<span># tag</span> {{ tag }}
    		</g-link>
     </div>
 </template>
@@ -15,16 +15,25 @@ export default {
 <style lang="scss">
 .post-tags {
   margin: 1em 0 0;
-
+ 
   &__link {
-  	margin-right: .7em;
+	margin-right: .7em;
   	font-size: .8em;
   	color: currentColor;
   	text-decoration: none;
   	background-color: var(--bg-color);
   	color: currentColor!important; //Todo: remove important;
-  	padding: .5em;
+  	padding: .3em;
   	border-radius: var(--radius);
+  }
+  &__link:hover{
+	filter: brightness(90%);
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
   }
 }
 </style>
