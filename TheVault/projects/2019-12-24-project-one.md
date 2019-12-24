@@ -7,5 +7,6 @@ title: Project One
 description: 'A project about one, the first project of the project'
 tags:
   - Research
+cover_image: /static/assets/images/project_a.jpg
 ---
 Uno dos tres asdoaskdosa
