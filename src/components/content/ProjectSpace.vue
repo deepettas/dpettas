@@ -28,7 +28,7 @@
                     <v-img
                       class="card_image white--text align-end"
                       height="130"
-                      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+                      :src="post.node.cover_image.src"
                     >
                       <v-card-title class="card-title" v-html="post.node.title"></v-card-title>
                               <!-- <h3  class="card-title" v-html="post.node.title" /> -->

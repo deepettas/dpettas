@@ -3,8 +3,8 @@ backend:
   branch: dev
   repo: deepettas/dpettas
 
-media_folder: "TheVault/projects/images"
-public_folder: "./images"
+media_folder: TheVault/projects/images
+public_folder: ./images
 
 collections:
   - name: "Post"
