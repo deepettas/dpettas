@@ -1,0 +1,101 @@
+[
+    {
+        "title": "awesome-dronecraft",
+        "description": "A Complete Autonomous Drones Study Plan",
+        "type": "tutorial",
+        "urls": {
+            "source": "https://github.com/Zarkopafilis/awesome-dronecraft"
+        },
+        "tags": ["drones", "autonomous"]
+    },
+    {
+        "title": "algotrading-api",
+        "description": "A 3 Part Project: Data Acquisition - Functional Rest API - Machine Learning",
+        "type": "project",
+        "urls": {
+            "source": "https://github.com/bitaesthetics/algotrading-api"
+        },
+        "tags": ["ai", "ml", "dl", "python"]
+    },
+    {
+        "title": ".Net Core Rest API",
+        "description": "A big spectrum of topics is covered. Articles and Youtube videos in collab with @elfocrash",
+        "type": "tutorial",
+        "urls": {
+            "source": "https://github.com/Elfocrash/Youtube.AspNetCoreTutorial",
+            "medium": "https://medium.com/@zarkopafilis/asp-net-core-2-2-3-rest-api-tutorials-index-e322afd39348?source=friends_link&sk=5c95258dcb116067588c1d9c0eb8b297",
+            "youtube": "https://www.youtube.com/watch?v=sdlt3-ptt9g&list=PLUOequmGnXxOgmSDWU7Tl6iQTsOtyjtwU"
+        },
+        "tags": ["csharp", "rest", "web", "netcore"]
+    },
+    {
+        "title": "go-mysql-server",
+        "description": "Interesting project. I did contributions on the implementations of several SQL commands and tests, as well as bug reports, during hacktoberfest.",
+        "type": "project",
+        "urls": {
+            "source": "https://github.com/src-d/go-mysql-server"
+        },
+        "tags": ["go", "db", "sql", "web"]
+    },
+    {
+        "title": "uavcan",
+        "description": "Hacktoberfest contributions on embedded C++ code. Designed and architected a big portion of the next-gen visualization tool with Vue.js",
+        "type": "project",
+        "urls": {
+            "source": "https://github.com/UAVCAN/libuavcan",
+            "tool": "https://github.com/UAVCAN/Yukon",
+            "site": "https://new.uavcan.org/"
+        },
+        "tags": ["embedded", "cpp", "vuejs", "drones"]
+    },
+    {
+        "title": "elfocrash/cosmonaut",
+        "description": "Provide CosmosDB Rest CRUD API Examples",
+        "type": "tutorial",
+        "urls": {
+            "source": "https://github.com/Elfocrash/Cosmonaut"
+        },
+        "tags": ["csharp", "web", "db", "netcore"]
+    },
+    {
+        "title": "basket12.gr",
+        "description": "A simple Vue.js with gridsome website exposing bad electoral processes of the Greek Basketball Federation",
+        "type": "website",
+        "urls": {
+            "site": "https://basket12.gr/"
+        },
+        "tags": ["web", "vuejs"]
+    },
+    {
+        "title": "eventora-app",
+        "description": "Summer Internship work on event ticket android apps",
+        "type": "app",
+        "urls": {
+            "app": "https://play.google.com/store/apps/details?id=com.eventora.mobile.android",
+            "scanner": "https://play.google.com/store/apps/details?id=com.eventora.BarcodeScanner"
+        },
+        "tags": ["android" , "java", "kotlin"]
+    },
+    {
+        "title": "gamedev",
+        "description": "Unreal Engine 4 Contributions, Game Publishing on Steam, Minecraft Server Mods",
+        "urls": {
+            "game": "https://store.steampowered.com/app/493650/Deep_Space_Dash/",
+            "mods": "https://github.com/zarkopafilis/RFS"
+        },
+        "type": "project",
+        "tags": ["ue4", "cpp", "android", "java"]
+    },
+    {
+        "title": "geolocation-social",
+        "description": "Geolocation based Social Network Android App",
+        "type": "app",
+        "tags": ["android", "java", "kotlin"]
+    },
+    {
+        "title": "reflex-testing-solution",
+        "description": "Features Include: Store testing results along with user data, Provide some training improvement insight on a dashboard per user, User search",
+        "type": "project",
+        "tags": ["web", "java", "springboot"]
+    }
+]

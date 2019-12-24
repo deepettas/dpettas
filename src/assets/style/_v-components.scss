@@ -1,9 +1,18 @@
 .v-navigation-drawer__content {
-    background-color: var(--bg-layout-color);
-  }
-.v-toolbar__content {
-background-color: var(--bg-layout-color);
+  background-color: var(--bg-layout-color);
 }
+
+.v-toolbar__content {
+  background-color: var(--bg-layout-color);
+}
+.v-card {
+  background-color: var(--bg-layout-color)!important;
+}
+
+.v-footer {
+  background-color: var(--bg-layout-color)!important;
+}
+
 .v-content {
-    background-color: var(--bg-layout-color);
+  background-color: var(--bg-layout-color);
 }
