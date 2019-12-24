@@ -1,34 +1,30 @@
 <template>
   <Layout :show-logo="true" :show-about="true" :show-entries="false">
-  
-      <h2 class="entry__title"> all neural outputs </h2>
+    <h2 class="entry__title">all neural outputs</h2>
 
-      <div class="flex-container">
-
-        <div style="flex: 4" class="posts">
-          <EntryCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-        </div>
-
-        <div style="flex: 1" >
-          <Sidemenu/> 
-        </div> 
+    <div class="flex-container">
+      <div style="flex: 4" class="posts">
+        <EntryCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node" />
       </div>
+
+      <div style="flex: 1">
+        <Sidemenu />
+      </div>
+    </div>
   </Layout>
 </template>
 
 
 <script>
-import EntryCard from '~/components/content/EntryCard.vue'
-import Sidemenu from '~/components/Sidemenu.vue'
+import EntryCard from "~/components/content/EntryCard.vue";
 export default {
   components: {
-    EntryCard,
-    Sidemenu
+    EntryCard
   },
   metaInfo: {
-    title: 'Entries'
+    title: "Entries"
   }
-}
+};
 </script>
 
 <page-query>

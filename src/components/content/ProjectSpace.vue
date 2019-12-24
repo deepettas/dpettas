@@ -57,7 +57,6 @@
 </template>
 
 <script>
-import projects from "~/../TheVault/projects.json";
 import PostTags from "~/components/content/PostTags.vue";
 import ProjectCard from "~/components/content/ProjectCard.vue";
 export default {
@@ -69,79 +68,8 @@ export default {
   
   data() {
     return {
-      category: null,
-      categories: [
-        {
-          text: "All Services",
-          filter: null
-        },
-        {
-          text: "Skyscrapers",
-          filter: 1
-        },
-        {
-          text: "Government",
-          filter: 2
-        },
-        {
-          text: "Customized",
-          filter: 3
-        }
-      ],
-      projects: [
-        {
-          name: "Project 1",
-          img: "project1.png",
-          categories: [1, 3]
-        },
-        {
-          name: "Project 2",
-          img: "project2.png",
-          categories: [2, 3]
-        },
-        {
-          name: "Project 3",
-          img: "project3.png",
-          categories: [4, 3]
-        },
-        {
-          name: "Project 4",
-          img: "project4.png",
-          categories: [1, 2]
-        },
-        {
-          name: "Project 5",
-          img: "project5.png",
-          categories: [2, 4]
-        },
-        {
-          name: "Project 6",
-          img: "project6.png",
-          categories: [1, 4]
-        },
-        {
-          name: "Project 6",
-          img: "project6.png",
-          categories: [1, 4]
-        },
-        {
-          name: "Project 6",
-          img: "project6.png",
-          categories: [1, 4]
-        },
-        {
-          name: "Project 6",
-          img: "project6.png",
-          categories: [1, 4]
-        },
-        {
-          name: "Project 6",
-          img: "project6.png",
-          categories: [1, 4]
-        }
-      ]
-    };
-  }
+    }
+    }
 };
 </script>
 
