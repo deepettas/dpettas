@@ -7,6 +7,6 @@ title: Now comes three
 description: 'Three is for threes, and trees are for snowboarding'
 tags:
   - Personal
-cover_image: /static/assets/images/project_a.jpg
+cover_image: /assets/images/project_b.jpg
 ---
 asdsad sa das as das dasas a
