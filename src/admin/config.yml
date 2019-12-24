@@ -3,12 +3,12 @@ backend:
   branch: dev
   repo: deepettas/dpettas
 
-media_folder: "src/assets/images"
-public_folder: "static/assets/images"
+media_folder: "TheVault/projects/images"
+public_folder: "./images"
 
 collections:
-  - name: "project"
-    label: "Project"
+  - name: "Post"
+    label: "Post"
     folder: "TheVault/projects"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -24,5 +24,13 @@ collections:
         widget: "select"
         options: ["Research", "Industry", "Art", "Personal"]
         multiple: true
+      - label: "Cover Image"
+        name: "cover_image"
+        widget: "image"
+        # default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
       - { label: 'Post content', name: 'body', widget: 'markdown' }
+      
       

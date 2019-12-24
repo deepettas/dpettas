@@ -10,9 +10,9 @@
     </div>
 
     <div class="post content-box">
-      <!-- <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
-      </div> -->
+      <div class="post__header">
+        <g-image alt="Cover image" :src="$page.post.cover_image" />
+      </div>
 
       <div class="post__content" v-html="$page.post.content" />
 
@@ -59,8 +59,8 @@ query Post ($id: ID!) {
   post: post (id: $id) {
     title
     path
+    cover_image
     date (format: "D. MMMM YYYY")
-    timeToRead
     tags {
       id
       title

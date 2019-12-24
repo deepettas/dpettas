@@ -59,6 +59,7 @@ query {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
+        cover_image
         path
         tags {
           id

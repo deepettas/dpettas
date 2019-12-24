@@ -13,7 +13,7 @@
 
       <v-card-text
         class="text--primary"
-      >{{post.description }} Description: This is a random description lorem ipsum keftedakos pakis pakis</v-card-text>
+      >{{post.description }}</v-card-text>
 
       <v-card-actions class="tag-buttons">
         <PostTags :post="post" />
