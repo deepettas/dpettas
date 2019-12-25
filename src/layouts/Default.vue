@@ -15,7 +15,6 @@
           :href="item.href"
           active-class="highlighted"
           :class="item.href === $route.path ? 'highlighted' : ''"
-
           :target="item.target ? item.target : ''"
         >
           <v-list-item-action>
@@ -49,15 +48,14 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer">
         <v-icon>menu</v-icon>
       </v-app-bar-nav-icon>
-      <v-toolbar-title class="toolbar-title">@deepettas</v-toolbar-title>
-
+      <v-toolbar-title class="toolbar-title" ><a style="text-decoration: none; color: black;" href="/about">@deepettas</a></v-toolbar-title>
       <v-spacer />
 
       <!-- <v-switch v-model="darkMode" label="Dark Mode" style="margin-top: 26px;"></v-switch> -->
       <div class="toolbar-icons">
         <v-btn
           icon
-          class="mx-1"
+          class="toolbar-buttons"
           v-for="entry in socialEntries"
           :key="entry.href"
           :href="entry.href"
@@ -85,6 +83,7 @@
 
     <v-footer app inset absolute>
       <span class="footer">Copyright &copy; Dionisis Pettas 2020</span>
+      <v-spacer/>
     </v-footer>
   </v-app>
 </template>
@@ -126,6 +125,9 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
 }
+.toolbar-buttons{
+  width: 10px!important;
+}
 
 .footer {
   font-size: 10px;
@@ -140,6 +142,7 @@ body {
 .fade-enter {
   opacity: 0;
 }
+
 .col-8{
   max-width: 62.5vw;
   min-width: 62.5vw
@@ -152,6 +155,7 @@ body {
   .toolbar-icons {
     display: none;
   }
+ 
   .col-8 {
     flex: 0 0 100% !important;
     max-width: 100% !important;

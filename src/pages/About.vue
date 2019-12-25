@@ -10,13 +10,16 @@
     <p class="about_text mt-10">
       My name is Dionisis (Διονύσης, IPA [ðˌionˈɪsis]), and I'm currently on a journey around Data and Intelligence.
       <br />I am interested in naturally emergent & artificially derived intelligence, human-oriented cybernetics & interfaces and
-      generative and algorithmic design and privacy.
+      generative and algorithmic design and interpretability.
       <br />
     </p>
     <p class="about_text mt-2">
       In my spare time I make things that convolve
-      <a href="/tag/art" style="text-decoration:none;">art</a> and
-      <a>technology</a>. I like to think about post-humanism, existentialism, and cyberoptimism.
+      <a
+        href="/tag/art"
+        style="text-decoration:none;"
+      >art</a> and
+      <a href="/tag/technology" style="text-decoration:none;">technology</a>. I like to think about post-humanism, existentialism, and cyberoptimism.
       I am exporting some of this neural output in my
       <a
         class="more"
@@ -31,11 +34,20 @@
       <g-image src="~/assets/images/sky.png" class="activity_icon mx-3" />and have a
       <g-image src="~/assets/images/shiba_inu.png" class="activity_icon mx-3" />named
       <g-image src="~/assets/images/cookie.png" class="activity_icon mx-3" />
-
+.
       <!-- <span style="font-size: 1.5em;">&circledast;</span> [ ] -->
     </p>
     <br />
-
+    <div class="text-right">
+      <p style="font-size: 0.7em;
+  font-weight: 500;">
+      "If I have seen further than others
+      <br />it is by standing upon the shoulders of giants."<br/>
+      <span style="font-weight: 600; font-style:italic;"> Sir Isaac Newton - 1675 </span>
+    </p>
+      
+    </div>
+    
     <h2>Work Experience</h2>
     <ul class="work_list">
       <li>

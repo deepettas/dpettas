@@ -5,19 +5,19 @@
         <g-image src="~/assets/images/fibonacci/fibonacciAsset 25@4x.png" max-width="100%" />
         <h2
           class="text-left mt-2"
-        >Hi, I'm Dionisis Pettas, a Computer Scientist & Creator. Currently in Greece.</h2>
+        >Hi, I'm <a style="font-size: 1em; text-decoration:none;" href="/about" >Dionisis Pettas</a>, a Computer Scientist & Creator. I like working with AI and Data. Currently in Greece.</h2>
         <br />
       </div>
 
       <div>
         <p class="intro">
-          We all have our chosen models of intelligence. Mine gravitate towards forming teams,
-          experimenting with intelligence and satisfying my curiocity
+          We all have our chosen models of intelligence. Mine gravitate towards teamwork,
+          artificial intelligence and self.exploration.
           <a
             class="more"
             href="about"
             style="text-decoration:none;"
-          >&ctdot;</a>
+          >>></a>
         </p>
 
         <div class="text-center">

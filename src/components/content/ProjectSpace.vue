@@ -1,58 +1,47 @@
 <template>
   <v-container grid-list-md text-xs-center>
-
     <v-row class="px-0">
       <v-col cols="12">
         <v-responsive min-height="700">
           <v-container>
             <transition-group tag="v-row" name="fade-transition">
-               <v-col
-                v-for="post in $page.posts.edges" 
-                :key="post.node.id"    
-            
+              <v-col
+                v-for="post in $page.posts.edges"
+                :key="post.node.id"
                 cols="12"
                 class="gallery-card"
                 md="4"
-
               >
                 <v-card
-                    class="project_card"
-                    tile
-                    height="300"
-                    hover
-                    @click="overlay = post.node.img"
-                    :to="post.node.path"
+                  class="project_card"
+                  tile
+                  height="300"
+                  hover
+                  @click="overlay = post.node.img"
+                  :to="post.node.path"
+                >
+                  <v-img
+                    class="card_image white--text align-end"
+                    height="130"
+                    :src="post.node.cover_image.src"
                   >
-                    
+                    <v-card-title class="card-title" v-html="post.node.title"></v-card-title>
+                    <!-- <h3  class="card-title" v-html="post.node.title" /> -->
+                  </v-img>
+                    <!-- <v-card-subtitle class="pb-0">Number 10</v-card-subtitle> -->
 
-                    <v-img
-                      class="card_image white--text align-end"
-                      height="130"
-                      :src="post.node.cover_image.src"
-                    >
-                      <v-card-title class="card-title" v-html="post.node.title"></v-card-title>
-                              <!-- <h3  class="card-title" v-html="post.node.title" /> -->
-                    </v-img>
-                    <div class="row flex">
-                    
+                    <v-card-text class="text--primary" v-html="post.node.description"></v-card-text>
 
-                      <!-- <v-card-subtitle class="pb-0">Number 10</v-card-subtitle> -->
-
-                      <v-card-text class="text--primary" v-html="post.node.description">  </v-card-text>
-
-                      <v-card-actions class="tag-buttons">
-                        <PostTags   :post="post.node"/>
-                      </v-card-actions>
-                    </div>
-                  </v-card>
-                </v-col>
+                    <v-card-actions class="tag-buttons">
+                      <PostTags :post="post.node" />
+                    </v-card-actions>
+                </v-card>
+              </v-col>
             </transition-group>
           </v-container>
         </v-responsive>
-
       </v-col>
     </v-row>
-
   </v-container>
 </template>
 
@@ -61,15 +50,14 @@ import PostTags from "~/components/content/PostTags.vue";
 import ProjectCard from "~/components/content/ProjectCard.vue";
 export default {
   name: "ProjectSpace",
-  components:{
+  components: {
     PostTags,
     ProjectCard
   },
-  
+
   data() {
-    return {
-    }
-    }
+    return {};
+  }
 };
 </script>
 
@@ -88,27 +76,26 @@ export default {
   display: none;
 }
 .project_card {
-    background-color: var(--bg-color)!important;
+  background-color: var(--bg-color) !important;
 }
-.card-title{
-    background-color: var(--bg-color);
-    font-size: 0.9em;
-    display: table;
-    padding: 0;
-    opacity: 0.6;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%);
-    
-    
-    color: var(--title-color);
+.card-title {
+  /* background-color: var(--bg-color); */
+  color: var(--bg-color);
+  font-size: 1.1em;
+  font-weight: 500;
+  display: table;
+  padding: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%);
 }
-.tag-buttons{
-    position: absolute;
-    bottom: 0%;
-    left: 1%;
-    padding-left: 10;
+.tag-buttons {
+  position: absolute;
+  bottom: 0%;
+  left: 1%;
+  z-index: 100;
+  padding-left: 10;
 }
 @media screen and (max-width: 670px) {
   .categories_span {

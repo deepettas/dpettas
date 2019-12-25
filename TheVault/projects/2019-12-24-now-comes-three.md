@@ -6,7 +6,7 @@ date: 2019-12-26T20:15:21.445Z
 title: Now comes three
 description: 'Three is for threes, and trees are for snowboarding'
 tags:
-  - Personal
+  - personal
 cover_image: ./images/project_b.jpg
 ---
 This is test project b's content

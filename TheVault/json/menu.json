@@ -5,9 +5,9 @@
         "href": "/"
     },
     {
-        "title": "CV",
+        "title": "About",
         "icon": "account_box",
-        "href": "/cv"
+        "href": "/about"
     },
     {
         "title": "Projects",
@@ -18,7 +18,7 @@
     {
         "title": "Blog",
         "icon": "notes",
-        "href": "https://medium.com/@deepettas",
+        "href": "https://www.subneural.space",
         "target": "_blank"
     }
 ]
