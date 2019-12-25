@@ -13,6 +13,9 @@
           v-for="item in menuItems"
           :key="item.title"
           :href="item.href"
+          active-class="highlighted"
+          :class="item.href === $route.path ? 'highlighted' : ''"
+
           :target="item.target ? item.target : ''"
         >
           <v-list-item-action>
@@ -42,7 +45,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left height="42">
+    <v-app-bar app clipped-left height="42" elevation='4'>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer">
         <v-icon>menu</v-icon>
       </v-app-bar-nav-icon>
@@ -130,9 +133,16 @@ body {
 .fade-enter-active {
   transition: opacity 0.5s;
 }
-
+.highlighted{
+  /* the gradient on top, adjust color and opacity to your taste */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+}
 .fade-enter {
   opacity: 0;
+}
+.col-8{
+  max-width: 62.5vw;
+  min-width: 62.5vw
 }
 @media screen and (max-width: 670px) {
   .toolbar-title {
