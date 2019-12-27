@@ -34,12 +34,12 @@
       <g-image src="~/assets/images/sky.png" class="activity_icon mx-3" />and have a
       <g-image src="~/assets/images/shiba_inu.png" class="activity_icon mx-3" />named
       <g-image src="~/assets/images/cookie.png" class="activity_icon mx-3" />
-.
+
       <!-- <span style="font-size: 1.5em;">&circledast;</span> [ ] -->
     </p>
     <br />
     <div class="text-right">
-      <p style="font-size: 0.7em;
+      <p style="font-size: 1em;
   font-weight: 500;">
       "If I have seen further than others
       <br />it is by standing upon the shoulders of giants."<br/>
@@ -47,8 +47,8 @@
     </p>
       
     </div>
-    
-    <h2>Work Experience</h2>
+
+    <h2 class="work_heading">Work Experience</h2>
     <ul class="work_list">
       <li>
         <p class="work_text">
@@ -82,7 +82,7 @@
         </p>
       </li>
     </ul>
-    <h2>Education</h2>
+    <h2 class="work_heading">Education</h2>
     <ul class="work_list">
       <li>
         <p class="work_text">
@@ -111,7 +111,7 @@
         </p>
       </li>
     </ul>
-    <h2>Research Experience</h2>
+    <h2 class="work_heading">Research Experience</h2>
     <ul class="work_list">
       <li>
         <p class="work_text">
@@ -141,14 +141,15 @@
         </p>
       </li>
     </ul>
-    <h5>
+    <h5 class="work_heading">
       Detailed resume
       <a
         href="https://drive.google.com/file/d/1pPUYv7y6r-7N1GaxZ7LLy2w3kaSfKtKz/view"
-        style="text-decoration:none;"
+        style="text-decoration:none; font-size: 1.1em;"
         target="_blank"
       >here.</a>
     </h5>
+
   </Layout>
 </template>
 
@@ -158,6 +159,19 @@ export default {};
 </script>
 
 <style lang="scss">
+
+.about_text {
+  font-size: 1.3em;
+  font-weight: 500;
+  max-width: 50em;
+  margin: auto;
+}
+.work_heading{
+  text-align: center;
+  
+margin-bottom: 1em;
+  
+}
 .work_list {
   list-style-type: none;
 }
@@ -165,7 +179,9 @@ export default {};
   font-weight: 100;
 }
 .work_text {
-  font-size: 0.9em;
+  font-size: 1.1em;
+  max-width: 40em;
+  margin: auto;
 }
 .profile_picture {
   width: 100px;
@@ -199,13 +215,18 @@ export default {};
   height: 30px;
   width: auto;
 }
-.about_text {
-  font-size: 0.9em;
-  font-weight: 500;
-}
+
 @media screen and (max-width: 670px) {
 .profile_picture{
   width: 24vw;
+}
+.about_text{
+  font-size: 1.1em;
+}
+.work_heading{
+  margin-left: 0;
+  margin-bottom: 1em;
+  
 }
 .work_list{
   margin: 0;
