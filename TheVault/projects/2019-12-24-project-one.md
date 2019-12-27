@@ -7,6 +7,7 @@ title: Project One
 description: 'A project about one, the first project of the project'
 tags:
   - research
+  - intelligence
 cover_image: ./images/project_b.jpg
 ---
 This is test projects content

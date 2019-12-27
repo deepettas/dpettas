@@ -14,12 +14,12 @@
       <br />
     </p>
     <p class="about_text mt-2">
-      In my spare time I make things that convolve
+      In my spare time, I make things that convolve
       <a
         href="/tag/art"
         style="text-decoration:none;"
       >art</a> and
-      <a href="/tag/technology" style="text-decoration:none;">technology</a>. I like to think about post-humanism, existentialism, and cyberoptimism.
+      <a href="/tag/intelligence" style="text-decoration:none;">intelligence</a>. I like to think about post-humanism, existentialism, and cyber-optimism.
       I am exporting some of this neural output in my
       <a
         class="more"
@@ -202,5 +202,15 @@ export default {};
 .about_text {
   font-size: 0.9em;
   font-weight: 500;
+}
+@media screen and (max-width: 670px) {
+.profile_picture{
+  width: 24vw;
+}
+.work_list{
+  margin: 0;
+  font-size: 0.9em;
+}
+
 }
 </style>

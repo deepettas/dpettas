@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Dionisis Pettas',
-  siteDescription: 'A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.',
+  siteDescription: 'Personal website that serves as a portofolio and idea hub. Feel free to connect.',
 
   templates: {
     Post: '/:title',
@@ -32,7 +32,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-152609582-1'
+        id: 'UA-152609582-2'
       }
     },
     {

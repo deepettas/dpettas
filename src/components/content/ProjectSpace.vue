@@ -94,7 +94,7 @@ export default {
   position: absolute;
   bottom: 0%;
   left: 1%;
-  z-index: 100;
+  width:100%;
   padding-left: 10;
 }
 @media screen and (max-width: 670px) {
