@@ -3,9 +3,9 @@
     <div>
       <div class="text-center">
         <g-image src="~/assets/images/fibonacci/fibonacciAsset 25@4x.png" max-width="100%" />
-        <h2
+        <h1
           class="text-left mt-2"
-        >Hi, I'm <a style="font-size: 1em; text-decoration:none;" href="/about" >Dionisis Pettas</a>, a Computer Scientist & Creator. I like working with AI and Data. Currently in Greece.</h2>
+        >Hi, I'm <a style="font-size: 1em; text-decoration:none;" href="/about" >Dionisis Pettas</a>, a Computer Scientist & Creator. I like working with AI and Data. Currently in Greece.</h1>
         <br />
       </div>
 
@@ -87,7 +87,7 @@ query {
   font-size: 0.7em;
 }
 .intro {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 500;
 }
 </style>

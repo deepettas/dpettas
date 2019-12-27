@@ -40,7 +40,7 @@
     <br />
     <div class="text-right">
       <p style="font-size: 1em;
-  font-weight: 500;">
+  font-weight: 500;   max-width: 80em;">
       "If I have seen further than others
       <br />it is by standing upon the shoulders of giants."<br/>
       <span style="font-weight: 600; font-style:italic;"> Sir Isaac Newton - 1675 </span>
@@ -184,7 +184,7 @@ margin-bottom: 1em;
   margin: auto;
 }
 .profile_picture {
-  width: 100px;
+  width: 10rem;
 
   border-radius: 50%;
 }
@@ -212,7 +212,7 @@ margin-bottom: 1em;
                                   supported by Chrome, Opera and Firefox */
 }
 .activity_icon {
-  height: 30px;
+  height: 40px;
   width: auto;
 }
 
