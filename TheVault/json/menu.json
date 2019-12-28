@@ -10,12 +10,6 @@
         "href": "/about"
     },
     {
-        "title": "Projects",
-        "icon": "build",
-        "href": "/projects",
-        "sub": true
-    },
-    {
         "title": "Blog",
         "icon": "notes",
         "href": "https://www.subneural.space",

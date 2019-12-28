@@ -149,13 +149,19 @@
         target="_blank"
       >here.</a>
     </h5>
-
+    <Signature class="post-signature" />
   </Layout>
 </template>
 
 
 <script>
-export default {};
+import Signature from '~/components/Signature.vue'
+export default {
+  components: {
+    Signature
+  }
+  
+};
 </script>
 
 <style lang="scss">

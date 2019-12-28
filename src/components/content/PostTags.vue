@@ -1,15 +1,22 @@
 <template>
   <div>
-    <v-link style="text-decoration: none;" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
+    <div v-if=showreal>
+    <g-link  style="text-decoration: none;" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
+      <a class="post-tags" :href="tag.path">#{{ tag.title }}</a>
+    </g-link>
+    </div>
+    <div v-else>
+      <div v-for="tag in post.tags" :key="tag.id" :to="tag.path">
       <!-- <a class="post-tags" :href="tag.path">#{{ tag.title }}</a> -->
       <span>#{{tag.title}} </span>
-    </v-link>
+    </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["post"]
+  props: ["post", "showreal"]
 };
 </script>
 

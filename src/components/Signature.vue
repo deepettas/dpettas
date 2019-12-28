@@ -1,11 +1,12 @@
 <template>
 	<div class="signature">
+
 		<a href="/">
+		
         <g-image alt="Logo image" class="signature__image" style="display: var(--hide-dark)" src="~/assets/images/fibonacci/fibonacciAsset 26.png"/>
 		
 		</a>
 		<!-- <g-image alt="Logo image" class="signature__image" style="display: var(--hide-light)" src="~/assets/images/fibonacciAsset 25.png" /> -->
-	
 		<h1 v-if="showTitle" class="signature__site-title">
 			{{ $static.metadata.siteName }}
 		</h1>
