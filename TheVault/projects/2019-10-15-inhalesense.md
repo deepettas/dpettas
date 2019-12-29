@@ -3,7 +3,7 @@ index: 0
 display_index: '000'
 published: true
 date: 2019-10-26T20:15:21.445Z
-title: 'InhaleSence: deep learning vs asthma.'
+title: 'InhaleSense: deep learning vs asthma.'
 description: 'Securing patients with deep learning from incorect inhalatory drug administration.'
 tags:
 - research
