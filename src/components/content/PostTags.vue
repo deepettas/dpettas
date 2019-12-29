@@ -5,10 +5,10 @@
       <a class="post-tags" :href="tag.path">#{{ tag.title }}</a>
     </g-link>
     </div>
-    <div v-else>
-      <div v-for="tag in post.tags" :key="tag.id" :to="tag.path">
+    <div style="display:flex"  v-else>
+      <div class="mx-1 fake-tags" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
       <!-- <a class="post-tags" :href="tag.path">#{{ tag.title }}</a> -->
-      <span>#{{tag.title}} </span>
+      <span >#{{tag.title}} </span>
     </div>
     </div>
   </div>
@@ -47,7 +47,10 @@ export default {
 }
 @media screen and (max-width: 670px) {
 .post-tags{
-  font-size: 0.8em;
+  font-size: 0.7em;
+}
+.fake-tags{
+  font-size: 0.6em;
 }
 }
 </style>

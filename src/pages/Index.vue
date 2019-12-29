@@ -3,21 +3,32 @@
     <div>
       <div class="text-center">
         <g-image src="~/assets/images/fibonacci/fibonacciAsset 25@4x.png" max-width="100%" />
-        <h1
-          class="text-left mt-2"
-        >Hi, I'm <a style="font-size: 1em; text-decoration:none;" href="/about" >Dionisis Pettas</a>, a Computer Scientist & Creator. I like working with AI and Data. Currently in Greece.</h1>
+        <h1 class="text-left mt-2">
+          Hi, I'm
+          <a style="font-size: 1em; text-decoration:none;" href="/about">Dionisis Pettas</a>, a Computer Scientist & Creator. I like working with AI and Data. Currently in Greece.
+        </h1>
         <br />
       </div>
 
       <div>
+        <h3 class="mt-1">Areas of interest</h3>
+        <p
+          class="intro"
+        >We live in an era of exponential intelligence. I am interested in understanding and architecting such intelligence.</p>
+        <h3 class="mt-1">Activity space</h3>
         <p class="intro">
-          We all have our chosen models of intelligence. Mine gravitate towards teamwork,
-          artificial intelligence and self.exploration.
-          <a
-            class="more"
-            href="about"
-            style="text-decoration:none;"
-          >>></a>
+          Our world is governed by an emerging gradient of systems and architectures, with (post-)humanity in the center. My focus lies in humans,
+          data and artificial intelligence.
+        </p>
+        <h3 class="mt-1">Writing</h3>
+
+        <p class="intro">
+          Information explosion has led the human mind astray when dealing with new models and abstractions. The key to innovation now lies in metabolizing all this chaos. In order to organise & store my neural output,
+          <a href="https://www.subneural.space" style="text-decoration:none;">subneural space</a> was created.
+        </p>
+
+        <p class="intro">
+          <a class="more" href="about" style="text-decoration:none;">More >></a>
         </p>
 
         <div class="text-center">
@@ -41,11 +52,10 @@ export default {
   components: {
     ProjectSpace
   },
-  
+
   metaInfo: {
     title: "Dionisis Pettas"
   }
-  
 };
 </script>
 <page-query>
@@ -87,7 +97,7 @@ query {
   font-size: 0.7em;
 }
 .intro {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 500;
 }
 </style>
