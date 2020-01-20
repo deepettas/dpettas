@@ -27,7 +27,7 @@
       </v-list>
 
       <br />
-      <v-divider :inset="inset"></v-divider>
+      <v-divider ></v-divider>
       <v-subheader>Social</v-subheader>
 
       <v-list dense>

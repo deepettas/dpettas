@@ -7,11 +7,11 @@
       <g-image src="~/assets/images/profile_new.png" class="profile_picture red mx-2 noselect" />
     </div>
 
-    <p class="about_text mt-10">
+    <p class="about_text mt-10 ">
       My name is Dionisis (Διονύσης, IPA [ðˌionˈɪsis]), and I'm currently on a journey around Data and Intelligence.
-      <br />I am interested in naturally emergent & artificially derived intelligence, human-oriented cybernetics & interfaces and
+      <br /><br />I am interested in naturally emergent & artificially derived intelligence, human-oriented cybernetics & interfaces and
       generative and algorithmic design and interpretability.
-      <br />
+      
     </p>
     <p class="about_text mt-2">
       In my spare time, I make things that convolve
@@ -168,7 +168,7 @@ export default {
 
 .about_text {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 400;
   max-width: 50em;
   margin: auto;
 }

@@ -98,6 +98,6 @@ query {
 }
 .intro {
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 400;
 }
 </style>
