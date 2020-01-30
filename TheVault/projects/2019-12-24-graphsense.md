@@ -1,13 +1,13 @@
 ---
-index: 0
-display_index: '000'
-published: false
+index: 1
+display_index: '001'
+published: true
 date: 2019-12-24T20:13:36.857Z
-title: Community prediction in graphs
-description: 'Managing NP-hard class problems with graph innovation and machine learning.'
+title: GraphSense
+description: Commoditizing Community Detection
 tags:
   - research
   - artificial intelligence
-cover_image: ./images/project_b.jpg
+cover_image: /./images/project_b_cover.jpg
 ---
 This is test projects content
