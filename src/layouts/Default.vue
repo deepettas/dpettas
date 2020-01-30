@@ -69,7 +69,7 @@
       <v-content>
         <v-container fluid fill-height>
           <v-layout fill-width>
-            <div class="col-8 mx-auto">
+            <div class="col-8 mx-auto px-0">
               <main>
                 <!-- a wrapper for slot is needed -->
                 <slot />

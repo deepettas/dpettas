@@ -89,6 +89,7 @@ query {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+
 }
 .entries_link {
   text-decoration: none;
