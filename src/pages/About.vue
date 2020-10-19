@@ -50,6 +50,13 @@
 
     <h2 class="work_heading">Work Experience</h2>
     <ul class="work_list">
+       <li>
+        <p class="work_text">
+          <span class="work_date mr-10">01/2020 - present</span>ML Engineer / Researcher -
+
+          <a href="http://www.vaix.ai/" style="text-decoration:none;">Vaix.ai</a>
+        </p>
+      </li>
       <li>
         <p class="work_text">
           <span class="work_date mr-10">06/2019 - 10/2019</span> Research Associate -
@@ -73,7 +80,7 @@
       </li>
       <li>
         <p class="work_text">
-          <span class="work_date mr-11">01/2017 - 10/2019</span> Application Software Engineer -
+          <span class="work_date mr-11">01/2017 - 12/2019</span> Application Software Engineer -
           <a
             href="https://www.phenom-world.com/"
             style="text-decoration:none;"
