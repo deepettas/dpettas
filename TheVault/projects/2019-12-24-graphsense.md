@@ -3,7 +3,7 @@ index: 1
 display_index: '001'
 published: true
 date: 2019-12-24T20:13:36.857Z
-title: GraphSense
+title: 'GraphSense: Community Intelligence'
 description: 'GraphSense: Commoditizing Community Detection'
 tags:
   - research
