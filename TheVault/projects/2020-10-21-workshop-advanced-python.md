@@ -9,7 +9,7 @@ tags:
   - industry
 cover_image: ./images/gabriel-benois-qnwpjzewewa-unsplash.jpg
 ---
-
+# Python workshop
 
 Back when I was in university, I was inspired by a Python workshop hosted by a local alumni group and a recent graduate who then worked in a [FANG type](https://www.investopedia.com/terms/f/fang-stocks-fb-amzn.asp#:~:text=In%20finance%2C%20the%20acronym%20%22FANG,%2C%20and%20Alphabet%20(GOOG).&text=FANG%20stocks%20are%20famous%20for,over%20the%20past%20five%20years) company.
 
@@ -19,7 +19,7 @@ As a result, I made a fun yet intense Python workshop that handled most of the i
 
 Due to the recent COVID developments, the workshop was transformed into a webinar, so it an added challenge of transporting those hard to grasp concepts over a boring video stream. More on how I handled it below.
 
-## Webinar Description:
+## Webinar Description
 
 What do we need today from a programming language? What tools are closest to our way of thought and the speed in which things are moving nowadays?
 
@@ -27,7 +27,7 @@ We need to construct ideas into working concepts easily especially given how fas
 
 Ranking top in most loved and used languages nowadays, Python is a powerful tool for almost any type of engineer. It is the magic ingredient that will help you materialize your ideas into reality. Given the right mindset and tools you can make your life as an engineer easier and more impactful. It can be categorized as an “easy to learn hard to master” subject.
 
-## Topics:
+## Topics covered
 
 * The Zen of Python
 * Everything is an object
