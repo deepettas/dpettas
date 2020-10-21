@@ -7,6 +7,7 @@ title: 'Workshop: Advanced Python'
 description: 'An alumni workshop '
 tags:
   - industry
+  - workshop
 cover_image: ./images/gabriel-benois-qnwpjzewewa-unsplash.jpg
 ---
 ## Inspiration
