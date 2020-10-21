@@ -41,11 +41,27 @@ Ranking top in most loved and used languages nowadays, Python is a powerful tool
 
 The hardest part with webinars is that you don't have tools like eye contact and body language to grasp the attention of the audience consistently. 
 
-![](/./images/screenshot-2020-10-21-at-2.33.24-pm.png)
-
-
-
 To tackle this issue, I supercharched the slides of the project with plenty of visual breaks and relative jokes:
+
+![Magic Methods meme](/./images/python_workshop/magic_methods_1.jpg)
+
+And then follow up with a technical example:
+
+![Magic Methods code](/./images/python_workshop/magic_methods_2.jpg)
+
+Another example is how I tried to portray decorators:
+
+![Decorators meme](/./images/python_workshop/magic_methods_1.jpg)
+
+Explained the structure visually:
+
+![Decorators visual](/./images/python_workshop/magic_methods_2.jpg)
+
+Then finally with a code example:
+
+![Decorators code](/./images/python_workshop/magic_methods_3.jpg)
+
+
 
 ## Results:
 
