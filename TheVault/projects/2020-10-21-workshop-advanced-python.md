@@ -1,8 +1,8 @@
 ---
 index: 2
 display_index: '002'
-published: false
-date: 2020-10-21T11:03:20.135Z
+published: true
+date: 2020-10-17T11:03:20.135Z
 title: 'Workshop: Advanced Python'
 description: 'An alumni workshop '
 tags:
