@@ -7,9 +7,9 @@ title: 'Workshop: Advanced Python'
 description: 'An alumni workshop '
 tags:
   - industry
-cover_image: /./images/gabriel-benois-qnwpjzewewa-unsplash.jpg
+cover_image: ./images/gabriel-benois-qnwpjzewewa-unsplash.jpg
 ---
-![]()
+
 
 Back when I was in university, I was inspired by a Python workshop hosted by a local alumni group and a recent graduate who then worked in a [FANG type](https://www.investopedia.com/terms/f/fang-stocks-fb-amzn.asp#:~:text=In%20finance%2C%20the%20acronym%20%22FANG,%2C%20and%20Alphabet%20(GOOG).&text=FANG%20stocks%20are%20famous%20for,over%20the%20past%20five%20years) company.
 
@@ -43,23 +43,23 @@ The hardest part with webinars is that you don't have tools like eye contact and
 
 To tackle this issue, I supercharched the slides of the project with plenty of visual breaks and relative jokes:
 
-![Magic Methods meme](/./images/python_workshop/magic_methods_1.jpg)
+![Magic Methods meme](./images/python_workshop/magic_methods_1.jpg)
 
 And then follow up with a technical example:
 
-![Magic Methods code](/./images/python_workshop/magic_methods_2.jpg)
+![Magic Methods code](./images/python_workshop/magic_methods_2.jpg)
 
 Another example is how I tried to portray decorators:
 
-![Decorators meme](/./images/python_workshop/magic_methods_1.jpg)
+![Decorators meme](./images/python_workshop/magic_methods_1.jpg)
 
 Explained the structure visually:
 
-![Decorators visual](/./images/python_workshop/magic_methods_2.jpg)
+![Decorators visual](./images/python_workshop/magic_methods_2.jpg)
 
 Then finally with a code example:
 
-![Decorators code](/./images/python_workshop/magic_methods_3.jpg)
+![Decorators code](./images/python_workshop/magic_methods_3.jpg)
 
 
 
