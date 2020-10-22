@@ -151,7 +151,7 @@
     <h5 class="work_heading">
       Detailed resume
       <a
-        href="https://drive.google.com/file/d/1pPUYv7y6r-7N1GaxZ7LLy2w3kaSfKtKz/view"
+        href="https://drive.google.com/file/d/1RY5acq4FcimCrkVLjea5aSYL5BdNnMj_/view?usp=sharing"
         style="text-decoration:none; font-size: 1.1em;"
         target="_blank"
       >here.</a>
