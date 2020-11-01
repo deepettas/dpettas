@@ -9,11 +9,27 @@
 
     <p class="about_text mt-10 ">
       My name is Dionisis (Διονύσης, IPA [ðˌionˈɪsis]), and I'm currently on a journey around Data and Intelligence.
-      <br /><br />I am interested in naturally emergent & artificially derived intelligence, human-oriented cybernetics & interfaces and
-      generative and algorithmic design and interpretability.
-      
+      <br /><br />I am interested in naturally emergent cognition, deep learning engineering and its technological impact on 
+      this era that we are entering to.
+
     </p>
     <p class="about_text mt-2">
+        In my spare time, I form groups that build stuff like 
+        <a
+          href="https://miro.com/app/board/o9J_klcG3Sw=/"
+          style="text-decoration:none;"
+          target="_blank"
+        >bitbot</a>, and write articles here & on
+        <a href="https://medium.com/@deepettas" style="text-decoration:none;" target="_blank" >medium</a>.
+        <!-- I am exporting some of this neural output in my
+        <a
+          class="more"
+          href="https://www.subneural.space"
+          style="text-decoration:none;"
+        >subneural space.</a> -->
+      </p>
+
+    <!-- <p class="about_text mt-2">
       In my spare time, I make things that convolve
       <a
         href="/tag/art"
@@ -26,7 +42,7 @@
         href="https://www.subneural.space"
         style="text-decoration:none;"
       >subneural space.</a>
-    </p>
+    </p> -->
     <p class="about_text mt-2" style="line-height: 2;">
       I also like to do some of:
       <g-image src="~/assets/images/snow.png" class="activity_icon mx-3" />
@@ -111,12 +127,7 @@
           >Google's Artificial Intelligence Nanodegree | Google & Udacity</a>
         </p>
       </li>
-      <li>
-        <p class="work_text">
-          <span class="work_date mr-5">06/2008 - 08/2008</span>
-          Stanford University Summer School | London England
-        </p>
-      </li>
+
     </ul>
     <h2 class="work_heading">Research Experience</h2>
     <ul class="work_list">
@@ -151,7 +162,7 @@
     <h5 class="work_heading">
       Detailed resume
       <a
-        href="https://drive.google.com/file/d/1RY5acq4FcimCrkVLjea5aSYL5BdNnMj_/view?usp=sharing"
+        href="https://drive.google.com/file/d/1dIFon-3esEXXkfTe5jCAxI4MjA-fvYip/view?usp=sharing"
         style="text-decoration:none; font-size: 1.1em;"
         target="_blank"
       >here.</a>

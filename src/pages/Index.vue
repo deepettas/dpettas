@@ -23,12 +23,13 @@
         <h3 class="mt-1">Writing</h3>
 
         <p class="intro">
-          Information explosion has led the human mind astray when dealing with new models and abstractions. The key to innovation now lies in metabolizing all this chaos. In order to organise & store my neural output,
-          <a href="https://www.subneural.space" style="text-decoration:none;">subneural space</a> was created.
+          Information explosion has led the human mind astray when dealing with new models and abstractions. The key to innovation now lies in metabolizing all this chaos.
+          In order to organise & store my neural output, this space was created.
+          <!-- <a href="https://www.subneural.space" style="text-decoration:none;">subneural space</a> was created. -->
         </p>
 
         <p class="intro">
-          <a class="more" href="about" style="text-decoration:none;">More >></a>
+          <a class="more" href="about" style="text-decoration:none;">About & CV >></a>
         </p>
 
         <div class="text-center">
